@@ -1,0 +1,4 @@
+Suorita molempiin kansioihin client JA server komento "npm install", 
+se asentaa vaaditut riippuvuudet.Client ja server käynnistyvät molemmat komennolla "npm start".
+
+Tässä github repo:https://github.com/vann1/ReseptisovellusRyhm-R

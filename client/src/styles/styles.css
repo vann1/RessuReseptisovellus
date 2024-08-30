@@ -1,0 +1,1602 @@
+.logo {
+  width:87px;
+  height: 100px;
+  margin-left:200px;
+  margin-top: -33px;
+  background-image: url("../../public/pics/ressu-logo1.png");
+}
+
+@media (max-width: 773px) { 
+  .logo {
+    margin-left: 140px;
+    transform: scale(0.5);
+  }
+}
+/*HomePage style */
+
+.container-home {
+  width: 100%; /* Voit määrittää leveyden tarpeidesi mukaan */
+  max-width: 1200px; /* Maksimileveys */
+  margin: 20px auto; /* Keskitä container */
+  padding: 0 15px; /* Lisää sisätilaa tarpeidesi mukaan */
+  box-sizing: border-box; /* Sisällytä reunukset ja täytöt leveyteen */
+  background-color: #fcf3d886;
+  word-wrap: break-word;
+}
+
+.homepage-top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.homepage-top2 {
+  display: flex;
+  flex-direction: column;
+}
+
+.homepage-search {
+  display: flex;
+  flex-direction: row;
+}
+.home-search-input {
+  font-family: Arial, sans-serif;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  padding: 10px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.home-search-input:focus {
+  box-shadow: 2px 2px 5px #ff9900;
+}
+
+.home-search-button {
+  background-color: #ff9900; 
+  color:#fff; 
+  padding: 10px 15px; 
+  border: none;
+  border-radius: 20px;
+  cursor: pointer; 
+  font-weight: bold;
+  margin-left: -54px
+}
+
+.home-search-button:hover {
+  box-shadow: 2px 2px 5px #ff9900;
+}
+.logohome {
+  width: 200px;
+  height: 220px;
+  background-image: url("../../public/pics/ressu-logo.png");
+  background-size: cover;
+}
+/*Navigation*/
+.navigation {
+    background-color: #ffca17;
+    padding: 10px;
+    align-items: center;
+    height: 35px;
+    position:sticky;
+    top: 0;
+    height: 35px;
+  }
+  
+
+  .navigation-list {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    background-color: #ffca17;
+  }
+  
+  .navigation-item {
+    margin-top: 5px;
+    margin-right: 20px;
+  }
+  
+  .navigation-link {
+    color: #fff;
+    text-decoration: none;
+    padding-left: 10px;
+    border-left: solid 5px;
+    
+  }
+  
+  .navigation-link:hover {
+    text-shadow: 2px 2px 5px #888888;
+    font-weight: bold;
+  }
+  .navright {
+    margin-left: auto;
+  }
+
+  .trigger {
+    display: none;
+  }
+  .home {
+    display: none;
+  }
+  .navigation-list.is-open {
+    max-height: 500px; 
+  }
+
+  @keyframes slideDown {
+    from {
+      max-height: 0; /* Alkutilanne: korkeus 0 */
+    }
+    to {
+      max-height: 500px; /* Lopputilanne: maksimikorkeus */
+    }
+  }
+
+  @media (max-width: 660px) {
+    .logo {
+      display: none;
+    }
+    .logout{
+      width: 120px;
+      margin-bottom: 15px;
+      position: relative;
+      top: 7px;
+      right: 20px;
+    }
+    .navigation-list{
+      display: none;
+    }
+    .navigation-list.is-open {
+      display:flex;
+      flex-direction:column;
+      padding: 9px;
+      margin: -27px -9px;
+      width: 100%;
+      animation: slideDown 0.7s ease;
+      
+    }
+
+    
+    .navigation.is-open {
+      margin-bottom: 210px;
+    }
+
+    .navigation-item {
+      margin-left: 10px;
+      margin-bottom: 10px;
+    }
+    .navigation-item-1 {
+      display: flex;
+      flex-direction: column;
+      margin-left: 10px;
+      margin-bottom: 10px;
+  
+    }
+    .navright  {
+      margin-left: 10px;
+    }
+    #home {
+      display: none;
+    }
+    .trigger {
+      display: flex;
+      background-image: url("../../public/pics/burgermenu.png");
+      padding-top: 40px;
+      padding-right: 40px;
+      background-repeat: no-repeat;
+      margin-left: auto;
+      border: none;
+      bottom: 32px;
+      margin-top: -6px;
+      position: relative;
+      background-color: rgba(255, 0, 0, 0);
+    }
+    .home {
+      display: flex;
+      background-image: url("../../public/pics/Homelogo.png");
+      margin-top: 2px;
+      padding-top: 36px;
+      width:40px;
+      background-repeat: no-repeat;
+      list-style-type: none;
+    }
+    .home:hover {
+      background-image: url("../../public/pics/Homelogohovered.png");
+    }
+  }
+  body {
+    background-image: url("../../public/pics/repetbackground.png");
+  }
+
+  .active {
+    color:#ff9900;
+    font-weight: bold;
+  }
+  #home {
+    position: relative;
+    top: 5px;
+    padding-top: 9px;
+    padding-right: 29px;
+    padding-left: 10px;
+    background-image: url("../../public/pics/Homelogo.png");
+    border: none;
+  }
+  #home:hover {
+    background-image: url("../../public/pics/Homelogohovered.png");
+  }
+
+  .navigation-item-1 {
+    margin-bottom: -10px;
+
+  }
+  .logout {
+    background-color: #ff9900; 
+    color:#fff; 
+    padding: 10px 15px; 
+    border: none;
+    border-radius: 20px;
+    cursor: pointer; 
+    font-weight: bold;
+    margin-left: 15px;
+    margin-right:35px;
+  }
+  
+  .logout:hover {
+    box-shadow: 2px 2px 5px #888888;
+    background-color: red;
+  }
+/*Navigation end*/
+
+.pError {
+    color :red;
+    font-size: 80%;
+    margin-top:-25px;
+    margin-bottom: -13px;
+
+}
+
+
+.regInput {
+    padding: 5px;
+    margin-bottom: 30px;
+}
+.infoText {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    left: 40px;
+    background-color: gray;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 20px;
+    color: white;
+    position: relative;
+    cursor: pointer;
+    margin-left: -20px;
+
+  }
+  
+  .infoText::after {
+    content: "Täytyy olla muotoa xxxxxx@xxxx.xx";
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 5px;
+    border-radius: 5px;
+    color: white;
+    font-size: 12px;
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+  }
+  
+  .infoText:hover::after {
+    opacity: 1;
+  }
+  .loginError {
+    color :red;
+    font-size: 80%;
+    margin-top:-30px;
+    margin-bottom: 13px;
+  }
+
+  .userDeletedSuccess {
+    color :green;
+    font-size: 90%;
+    margin-bottom: 13px;
+    font-weight: bold;
+  }
+
+  /*UUSI RESEPTI SIVU JUTTUJA*/
+  .ingredient-delete-button{
+      background-color: #ff9900; 
+      color:#fff; 
+      padding: 1px 7px; 
+      border: none;
+      border-radius: 20px;
+      cursor: pointer; 
+      font-weight: bold;
+      margin-left: auto;
+  }
+  .ingredient-delete-button:hover{
+    background-color: red; 
+    box-shadow: 2px 2px 5px #888888;
+  }
+  
+  .ingredient-save-button {
+      background-color: #ff9900; 
+      color:#fff; 
+      padding: 10px 7px; 
+      border: none;
+      border-radius: 20px;
+      cursor: pointer; 
+      font-weight: bold;
+      margin-left: auto;
+      margin-bottom: -4px;
+  }
+  .ingredient-save-button:hover {
+    box-shadow: 2px 2px 5px #888888;
+    background-color: green;
+}
+  
+  .ingredient-add-button {
+    background-color: #ff9900; 
+    color:#fff; 
+    padding: 1px 7px; 
+    border: none;
+    border-radius: 20px;
+    cursor: pointer; 
+    font-weight: bold;
+    margin-left: auto;
+  }
+  .ingredient-add-button:hover {
+    background-color:green;
+    box-shadow: 2px 2px 5px #888888;
+}
+  
+ 
+  .component-background {
+    background-color: #fcf3d8;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+
+.component-background h1 {
+  color: #624e08;
+  text-align: center;
+}
+
+.newrecipe{
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #ffedb2;
+  padding:10px;
+  border-radius: 10px;
+}
+ 
+
+
+
+ #newrecipesavebtn {
+  background-color: #ff9900;
+  border: none;
+  color:#fff; 
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
+  padding: 10px 10px;
+  margin-left: 10px;
+}
+
+#newrecipesavebtn:hover{
+  background-color: green;
+  text-decoration: none;
+}
+
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  background-color: #ffe58e;
+  border-radius: 10px;
+  padding: 1%;
+}
+
+#RuokaKategoria {
+  display: flex;
+  align-items: center;
+}
+
+.recipehalf{
+  flex: 0 0 50%;
+  box-sizing: border-box;
+  width: 100%;
+  padding:1%;
+}
+
+.ingredientlist {
+  background-color: #ffe58e;
+  border-radius: 10px;
+  padding: 1%;
+}
+.recipehalf2 div{
+  height: 300px;
+}
+
+.ingredientlist th {
+  font-weight: 400;
+}
+
+.recipehalf textarea{
+  width:100%;
+  resize:none;
+}
+
+.recipe-input {
+  font-family: Arial, sans-serif;
+  border: 1px solid #ccc;
+  width: 90%;
+  border-radius: 5px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.recipe-input:focus {
+  border-color: #ff9900;
+  box-shadow: 2px 2px 5px #ff9900;
+}
+.recipebutton {
+  background-color: #ff9900; 
+  color:#fff; 
+  padding: 5px 7px; 
+  border: none;
+  border-radius: 20px;
+  cursor: pointer; 
+  font-weight: bold;
+  margin: 1px;
+}
+
+
+.recipebutton:hover {
+  background-color: green;
+  box-shadow: 2px 2px 5px #888888;
+}
+.recipebutton-delete:hover {
+  background-color: red;
+  box-shadow: 2px 2px 5px #888888;
+}
+.recipeGuideContainer {
+  padding-top: 10%;
+}
+
+@media screen and (max-width: 1200px) {
+    .component-background {
+        width: 100%;
+        padding:0;
+    }
+  
+}
+
+@media screen and (max-width: 1134px) {
+.recipehalf{
+      flex: 0 0 100%; /* Each item takes up 50% of the container width */
+      text-align: center;
+      align-items: center;
+    }
+    .recipehalf2 {
+      display: flex;
+      flex-direction: column;
+    }
+    .recipehalf2 div{
+      height: auto;
+    }
+    .recipeGuideContainer {
+      order: -1; /* Move this div to the top */
+      margin-bottom: 20px; /* Add some space between the image and the text area */
+      padding-top: 0%;
+    }
+    .ingredientlist{
+      display: flex;
+     justify-content: center;
+      align-items: center;
+    }
+    .newrecipe input {
+      text-align: center;
+    }
+    .newrecipe {
+      display: flex;
+     justify-content: center;
+      align-items: center;
+    }
+
+
+}
+
+/*UUSI RESEPTI SIVU JUTUT LOPPU*/
+
+
+
+/*RECIPE SEARCH*/
+
+.container-search {
+  background-color: #fcf3d886;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto; /* Keskitä container */
+  max-width: 1200px;
+  padding: 10px;
+  justify-content: center;
+  flex-direction: column;
+}
+
+
+.reciperesults {
+
+}
+.searchform {
+  background-color: #ffe58e;
+  border-radius: 10px;
+  padding: 1%;
+  width: 90%;
+  margin: auto;
+}
+
+.searchpage {
+  flex-wrap: wrap;
+  padding:10px;
+  border-radius: 10px;
+}
+
+.search-option{
+  margin-left: 10px;
+
+  margin-top: 0px;
+}
+
+.search {
+  display: flex;
+  justify-content: center;
+  height: 40px;
+}
+
+.searchbutton {
+  margin: auto;
+  display: flex;
+  text-align: center;
+  margin-top: 15px;
+  width: 150px;
+}
+
+.reciperesults {
+  display: flex;
+  margin: auto;
+
+}
+.reciperesults td {
+  display: flex;
+  width: 780px;
+}
+.search-header {
+  display: flex;
+  color: #624e08;
+  justify-content: center;
+  
+}
+.reciperow {
+  background-color: #ffe58e;
+  display: flex;
+  margin-bottom: 100px;
+  border-radius: 10px;
+  width: 800px;
+  flex-wrap: wrap; 
+  
+}
+
+.reciperesult-thead {
+  font-size: 1.5em;
+  color: #624e08;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+.alterimage {
+  margin-left: auto;
+  max-height: 200px;
+  max-width: 300px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+.border4name {
+  color: #624e08;
+  border-left: solid 7px;
+  padding-left: 10px;
+}
+
+.recipename {
+  display: flex;
+  color: #624e08;
+  text-decoration: none;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.recipename:hover {
+  text-shadow: 2px 2px 5px #888888;
+  font-weight: bold;
+}
+.recipedesctiption {
+  word-break: break-all;
+
+}
+
+
+
+.recipedesctiptiontitle {
+  margin-bottom: -10px;
+}
+
+.search-image {
+  margin-left: auto;
+}
+
+.recipeimage {
+  max-height: 200px;
+  max-width: 300px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+
+}
+
+.search-flex {
+  display: flex;
+  flex-direction: column; 
+  margin-left: 15px;
+  width: 100%;
+}
+
+.search-top {
+  display: flex;
+  flex-direction: row;
+  
+}
+
+
+.search-top-column {
+  display: flex;
+  flex-direction: column;
+  margin-top: -20px;
+}
+
+
+.search-bottom {
+  margin-top: -40px;
+}
+
+.searchbutton {
+  background-color: #ff9900; 
+  color:#fff; 
+  padding: 10px 15px; 
+  border: none;
+  border-radius: 20px;
+  cursor: pointer; 
+  font-weight: bold;
+  text-align: center;
+  display: block;
+}
+
+
+.searchbutton:hover {
+  box-shadow: 2px 2px 5px #888888;
+}
+
+.search-input {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  width: 90%;
+  border-radius: 5px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.search-input:focus {
+  border-color: #ff9900;
+  box-shadow: 2px 2px 5px #ff9900;
+}
+
+
+
+@media screen and (max-width: 844px) {
+
+  .search-input {
+    width: 50%;
+  }
+  .search {
+    margin-top: 100px;
+    flex-direction: column;
+
+
+  }
+
+  .search-option {
+    margin:10px;
+    display: flex;
+    justify-content: space-between;
+
+  }
+  .searchform {
+    height: 260px;
+  }
+  .searchbutton {
+    margin-top: 85px;
+  }
+  
+  .reciperow {
+    background-color: #ffe58e;
+    display: flex;
+    margin-bottom: 100px;
+    border-radius: 10px;
+    width: 600px;
+    flex-wrap: wrap; 
+  }
+  
+  .reciperesults td {
+    display: flex;
+    width:580px;
+  }
+
+
+}
+
+@media (max-width: 660px) {
+  
+  .search-input {
+    width: 50%;
+  }
+
+  .search-option {
+    display: flex;
+    justify-content: space-between;
+
+
+  }
+  .searchform {
+    width: 450px;
+
+  }
+
+
+  .reciperow {
+    width: 450px;
+    padding: 10px;
+  }
+  
+
+
+  .reciperesults td {
+    display: flex;
+    width:450px;
+    flex-wrap: wrap;
+
+  }
+
+
+
+  .alterimage {
+
+    max-height: 200px;
+    max-width: 300px;
+    border-radius: 10px;
+
+  }
+
+  .search-flex {
+    display: flex;
+    flex-direction: column; 
+    margin-left: 15px;
+  }
+  
+  .search-top {
+    display: flex;
+    flex-direction: column;
+
+  }
+  
+.search-image {
+  margin-left: 0px;
+
+}
+.recipeimage {
+
+
+}
+
+.recipename {
+  margin-bottom: -10px;
+}
+  .search-top-column {
+    display: flex;
+    flex-direction: column;
+    margin-top: -30px;
+
+  }
+  
+  .search-bottom {
+    margin-top: 0px;
+  }
+  
+  
+  
+}
+
+
+@media (max-width: 500px) {
+  .search-input {
+    width: 50%;
+  }
+
+  .search-option {
+    display: flex;
+    justify-content: space-between;
+
+  }
+  .searchform {
+    width: 350px;
+
+  }
+  .reciperow {
+    width:350px;
+    padding: 10px;
+  }
+  
+  .recipeindructions p,h2{
+
+
+  }
+
+  .reciperesults td {
+    display: flex;
+    width:350px;
+    flex-wrap: wrap;
+
+  }
+
+  .recipedesctiption {
+
+  }
+  .recipeimage {
+    margin-left: auto;
+    margin-bottom: auto;
+    max-height: 200px;
+    max-width: 300px;
+    border-radius: 10px;
+    margin: auto;
+    
+
+  }
+
+  .recipeindructions {
+    margin-top: -30px;
+
+
+
+  }
+  .alterimage {
+    margin-left: auto;
+    margin-bottom: auto;
+    max-height: 200px;
+    max-width: 300px;
+    border-radius: 10px;
+    margin: auto;
+  }
+  
+
+}
+
+@media (max-width: 410px) {
+  .reciperow {
+    width:250px;
+    padding: 10px;
+  }
+  
+  .recipeindructions p,h2{
+
+
+  }
+
+  .reciperesults td {
+    display: flex;
+    width:250px;
+    flex-wrap: wrap;
+
+  }
+
+  .searchform {
+    width: 250px;
+
+  }
+
+  .recipedesctiption {
+
+  }
+  .recipeimage {
+    margin-left: auto;
+    margin-bottom: auto;
+    max-height: 190px;
+    max-width: 225px;
+    border-radius: 10px;
+    margin: auto;
+  }
+  .recipeindructions {
+    margin-top: -30px;
+  }
+
+  .recipeindructions h2 {
+    font-size: 1.2em;
+
+  }
+  .alterimage {
+    max-height: 190px;
+    max-width: 225px;
+    border-radius: 10px;
+  }
+  
+  .search-flex {
+    display: flex;
+    flex-direction: column; 
+    margin-left: 15px;
+  }
+  
+  .search-top {
+    display: flex;
+    flex-direction: column;
+
+  }
+  
+.search-image {
+  margin-left: 0px;
+
+}
+.recipeimage {
+
+
+}
+.logo {
+  margin-top:-80px;
+  margin-left: 60px;
+}
+.recipename {
+  margin-bottom: -10px;
+}
+  .search-top-column {
+    display: flex;
+    flex-direction: column;
+    margin-top: -30px;
+
+  }
+  
+  .search-bottom {
+    margin-top: 0px;
+  }
+  
+  
+
+}
+
+/*RECIPE SEARCH END*/
+
+
+
+
+
+/*PROFILEPAGE*/
+.container-profile {
+  background-color: #ffe58e;
+  border-radius: 10px;
+  padding: 1%;
+
+}
+
+.thead-profile {
+  font-size: 1.5em;
+  color: #624e08;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.h1-profile {
+  color: #624e08;
+  text-align: center;
+}
+
+.recipe-delete-button {
+  background-color: #ff9900; 
+  color:#fff; 
+  padding: 2px 15px; 
+  height: 35px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer; 
+  font-weight: bold;
+  margin-left: auto;
+  margin-top: 9px;
+}
+
+
+.profile-background {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding-top: 0;
+  background-color: #ffedb2;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.favorites{
+    display: flex;
+    flex-wrap: wrap;
+   justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.favoritereciperow tr {
+  background-color: #ffe58e;
+  display: flex;
+  margin-bottom: 1%;
+  border-radius: 10px;
+  width: 100%;
+  flex-wrap: wrap; 
+  
+}
+
+.favoritestable{
+  width: 100%;
+}
+
+.favoritesearch-image {
+  margin-right: 2%;
+  margin-left: auto;
+}
+
+
+.profile-component{
+    padding:10px;
+    
+}
+
+.profilerecipes{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.profilerecipes table {
+  width: 100%;
+  text-align: center;
+}
+
+.profilerecipes th,
+.profilerecipes td {
+  width: 33.33%;
+  box-sizing: border-box;
+}
+
+.profilerecipethead{
+  background-color: #f7d977;
+}
+
+.profilerecipetbody{
+  background-color: #f7e29d;
+}
+.userinfo{
+  color: #3a2e04;
+}
+
+
+
+.recipe-delete-button:hover {
+  box-shadow: 2px 2px 5px #888888;
+  background-color: red;
+}
+
+.td-profile {
+  background-color: #ffe58e;
+  display: flex;
+  padding: 15px;
+  border-radius: 10px;
+  flex-direction: row;
+  gap: 30px;
+}
+
+
+.p-profile-category {
+  font-weight: bold;
+}
+
+.link-profile-recipe {
+  font-weight: bold;
+  text-decoration: none;
+  color: #624e08;
+
+}
+.link-profile-recipe:hover {
+  text-shadow: 2px 2px 5px #888888;
+}
+
+@media screen and (max-width: 1100px) {
+  .profile-background {
+      width: 100%;
+      padding:0;
+  }
+  
+  
+}
+
+
+
+/*PROFILEPAGE*/
+
+/*SHOW RECIPE STARTS*/
+.showrecipe-container {
+  background-color: #fcf3d886;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto; 
+  max-width: 1200px;
+  padding: 10px;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.recipeinfo-container {
+  display: flex;
+  flex: 1;
+  gap: 10px;
+  flex-direction: row;
+}
+
+.recipeinfobox1 {
+  flex: 1;
+  padding: 15px;
+  background-color: #ffe58e;
+  margin: 15px; 
+  border-radius: 10px;
+}
+
+.recipeinfobox2 {
+  flex: 1;
+  padding: 15px;
+  background-color: #ffe58e;
+  margin: 15px;
+  border-radius: 10px;
+}
+
+.sharerecipebox {
+  padding: 20px;
+  background-color: #ffe58e;
+  margin: 15px;
+  border-radius: 10px;
+}
+
+.ratingbox {
+  padding: 20px;
+  background-color: #ffe58e;
+  margin: 15px;
+  border-radius: 10px;
+}
+
+
+.recipenameshow {
+  color: #624e08;
+  text-decoration: none;
+  padding: 10px;
+  text-align: center;
+}
+
+.email-input-field {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+.email-input-field:focus {
+  border-color: #ff9900;
+  box-shadow: 2px 2px 5px #ff9900;
+}
+
+.recipeshowingredients table {
+  width: 100%;
+  text-align: left;
+}
+
+.showrecipetable20 {
+  width: 15%;
+  box-sizing: border-box;
+}
+.showrecipetable40 {
+  width: 60%;
+  box-sizing: border-box;
+}
+
+
+.email-send-button {
+  background-color: #ff9900; 
+  color:#fff; 
+  padding: 10px 30px; 
+  border: none;
+  border-radius: 20px;
+  cursor: pointer; 
+  font-weight: bold;
+  margin-left: 20px;
+}
+
+.email-send-button:hover {
+  background-color: green;
+}
+.email-form {
+  padding: 10px;
+  background-color: #fcebb3;
+  border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  .compartment-container {
+    flex-direction: column; 
+  }
+}
+
+/*SHOW RECIPE ENDS*/
+/*RECIPE REVIEW STARTS*/
+.reviews{
+  background-color: #ffdd6c;
+  border-radius: 10px;
+  margin-top:5px;
+}
+
+.review-box{
+  background-color: #ffdd6c;
+  padding:0.5%;
+  border-radius: 10px;
+  display:flex;
+  flex-direction: column;
+}
+
+.review-name{
+  padding: 5px;
+  background-color: #f8e39d;
+  border-radius: 10px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+.review-name label{
+  font-weight: bold;
+  color: #624e08;
+}
+
+.review-comment{
+  background-color: #fcebb3;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding-left: 1%;
+}
+
+#reviewtitle{
+  font-weight: bold;
+  color: #624e08;
+  text-align: center;
+  font-size: 22px;
+}
+
+.reviewtext{
+  width: 100%;
+  height: 100px;
+  resize:none;
+  font-family: Arial, sans-serif;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.reviewtext:focus {
+  border-color: #ff9900;
+  box-shadow: 2px 2px 5px #ff9900;
+}
+#revieweditbtn {
+  background-color: #ff9900;
+  color:white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
+  height: 30px;
+  width: 80px;
+}
+
+#revieweditbtn:hover{
+  background-color: green;
+  text-decoration: underline;
+}
+
+#reviewedelbtn {
+  margin-left: 5px;
+  background-color: #ff9900;
+  color:white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
+  height: 30px;
+  width: 80px;
+}
+
+#reviewedelbtn:hover{
+  background-color: red;
+  text-decoration: underline;
+}
+
+
+/*RECIPE REVIEW ENDS*/
+
+
+
+
+
+
+
+/*RegisterPage Style*/
+.emailExist {
+  margin-top: 5px;
+}
+
+.Register-container {
+  width: 100%;
+  max-width: 1200px; /* Maksimileveys */
+  margin: 0 auto; /* Keskitä container */
+  padding: 0 15px; /* Lisää sisätilaa tarpeidesi mukaan */
+  box-sizing: border-box; /* Sisällytä reunukset ja täytöt leveyteen */
+  word-wrap: break-word;
+  text-align: center;
+  height: 94vh;
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  background-color: #fcf3d886;
+}
+
+.Register-form {
+  width: 380px;
+
+  background-color:  #ffe58e;
+  box-shadow: 2px 2px 5px 5px#888888;
+  height: 515px;
+
+}
+
+.Register-h1 {
+  color: #624e08;
+  display: flex;
+  justify-content: center;
+  margin-bottom: -10px;
+  margin-top: 0px;
+}
+
+.Register-button {
+  background-color: #ff9900; 
+  color:#fff; 
+  padding: 10px 60px; 
+  border: none;
+  border-radius: 20px;
+  cursor: pointer; 
+  font-weight: bold;
+}
+
+.Register-button:hover {
+  background-color: green;
+}
+.Register-p {
+  margin-bottom: 30px;
+}
+.register-input-field {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.register-input-field:focus {
+  border-color: #ff9900;
+  box-shadow: 2px 2px 5px #ff9900;
+}
+
+.register-inputs {
+  margin-bottom: -20px;
+}
+.Register-success-message {
+  text-decoration: none;
+  color: green;
+}
+
+.Register-success-message:hover {
+  text-shadow: 2px 2px 10px #888888; /* Muutetaan tekstivarjoa hiiren ollessa linkin päällä */
+}
+
+
+/*RegisterPage Style ENDS*/
+
+
+
+
+
+/*LoginPage Style STARTS*/
+
+.Login-container {
+  width: 100%;
+  max-width: 1200px; /* Maksimileveys */
+  margin: 0 auto; /* Keskitä container */
+  padding: 0 15px; /* Lisää sisätilaa tarpeidesi mukaan */
+  box-sizing: border-box; /* Sisällytä reunukset ja täytöt leveyteen */
+  word-wrap: break-word;
+  text-align: center;
+  height: 94vh;
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  background-color: #fcf3d886;
+}
+
+.Login-form {
+  width: 380px;
+  background-color:  #ffe58e;
+  box-shadow: 2px 2px 5px 5px#888888;
+  height: 400px;
+
+}
+
+.login-inputs {
+  margin-bottom: -20px;
+}
+.loginform-link {
+  margin-top: -10px;
+}
+.loginform-links {
+  margin-top: -5px;
+}
+/*LoginPage Style ENDS*/
+
+
+/*AdminPage Style STARTS*/
+.Admin-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  height: 94vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fcf3d886;
+}
+
+.Admin-h1 {
+  color: #624e08;
+  display: flex;
+  justify-content: center;
+}
+
+.Admin-Div {
+  width: 600px;
+  background-color: #ffedb2;
+  box-shadow: 2px 2px 5px 5px #888888;
+  padding: 20px;
+  margin-top: 100px;
+}
+
+.Admin-Page-User {
+  max-width: 330px;
+
+}
+
+.Admin-button-td {
+  text-align: right;
+}
+
+.Admin-button {
+  background-color: #ff9900;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.Admin-button:hover {
+  background-color: red;
+}
+
+.Admin-table {
+  border-radius: 10px;
+  padding: 50px;
+  margin: auto;
+  background-color: #ffe58e;
+  
+}
+
+/*AdminPage Style ENDS*/
+
+/*Change password page STARTS*/
+
+
+.changepassword-button {
+  background-color: #ff9900; 
+  color:#fff; 
+  padding: 10px 20px; 
+  border: none;
+  border-radius: 20px;
+  cursor: pointer; 
+  font-weight: bold;
+}
+
+
+.changepassword-button:hover {
+  background-color: green;
+}
+
+.Changepassword-form {
+  width: 380px;
+  background-color:  #ffe58e;
+  box-shadow: 2px 2px 5px 5px#888888;
+  height: auto;
+
+}
+.changepassword-messages {
+  font-weight: bold;
+}
+.border4PasswordChange {
+    color: #624e08;
+    border-left: solid 7px;
+    padding-left: 10px;
+
+}
+.changepassword-link {
+  text-decoration: none;
+}
+.changepassword-link:hover {
+  text-decoration: none;
+  font-weight: bold;
+  text-shadow: 2px 2px 5px #888888;
+}
+/*Change password page ENDS*/
+
+
+/*LostPassword style starts*/
+
+.LostPassword-form {
+  width: 380px;
+  background-color:  #ffe58e;
+  box-shadow: 2px 2px 5px 5px#888888;
+  height: 300px;
+}
+
+/*LostPassword style ends*/
